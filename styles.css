@@ -1,0 +1,36 @@
+body{
+    background-color:bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .radio {
+    margin: 0.5rem;
+ 
+  }
+
+  .radio-label {
+    position: relative;
+    margin: .5rem;
+    line-height: 135%;
+    cursor: pointer;
+  }
+
+  input[type=text] {
+    padding: 5px;
+    margin:10px 0;
+    border: 0px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    width:50%;
+    font-family:inherit;
+  }
