@@ -4,26 +4,34 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta charset="utf-8">
 	<script>
-	/*	function setSearchEngine(){
-
-			let engine = document.querySelector("input[name=engine]:checked");
-			let question = document.querySelector("input[name=q]");
+		function setSearchEngine(){
 			let actions = {
 				"google" : "https://www.google.com/search",
 				"duckDuckGo" : "https://duckduckgo.com/",
 				"bing" : "https://www.bing.com/search",
 				"ask" : "https://www.ask.com/web"
 			};
+			let form = document.getElementById("searchForm");
+			let engine = document.querySelector("input[name=engine]:checked");
+			let question = document.querySelector("input[name=q]");
+			if (question.value ===""){
+				alert("Please add a search term and select a search engine.");
+				event.preventDefault();
+			}
+			if(question.value ==="" || engine.value===""){
+				alert("Please add a search term and select a search engine.");
+				event.preventDefault();
+			} 
+
 			let actionURL = actions[engine.value];
 			form.setAttribute ( "action" , actionURL);
 		}
 
     window.addEventListener("load", function(){
-		let submitBtn = document.getElementById('submit');
 		let form = document.getElementById("searchForm");
-		form.addEventListener("submit",setSearchEngine());
+		form.addEventListener("submit",setSearchEngine);
     });
-*/
+/*
 //THIS WORKS
 	window.addEventListener("load", function(){
 		let form = document.getElementById("searchForm");
@@ -45,7 +53,7 @@
 			form.setAttribute ( "action" , actionURL);
 		}
 		);
-    });
+    });*/
 
 	</script>
 </head>
